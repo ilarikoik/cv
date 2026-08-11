@@ -4,10 +4,9 @@ import { Mail , CodeXml} from 'lucide-react';
 export function Hero() {
   return (
     <section>
-      {/* Hero */}
       <div 
       id="hero"
-      className="relative mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center md:py-28">
+      className="brelative mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center md:py-28">
 
         <div>
           {/* <p className="mb-4 font-mono text-sm text-accent-300">
@@ -68,7 +67,7 @@ export function Hero() {
             </div>
             </div>
 
-        <div className="hidden md:flex relative mx-auto w-full max-w-md">
+        <div className="hidden md:flex relative mx-auto w-full max-w-md justify-end">
           <div className="overflow-hidden rounded-2xl border border-paper-50/10 bg-ink-900 text-paper-50 shadow-2xl shadow-accent-500/10">
 
             <div className="flex items-center gap-2 border-b border-paper-50/10 bg-ink-800/60 px-4 py-3">
@@ -81,7 +80,6 @@ export function Hero() {
               </span>
             </div>
 
-            {/* Code */}
             <pre className="overflow-x-auto p-5 font-mono text-[13px] leading-relaxed">
               <code>
               <pre className="overflow-x-auto p-5 font-mono text-[13px] leading-relaxed">

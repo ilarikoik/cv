@@ -19,11 +19,11 @@ const SKILLS = [
         <p className="font-mono text-accent-500 text-2xl">Skills</p>
        
   
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-3 w-full bg-black/10 rounded-xl dark:bg-white/10">
           {SKILLS.map((group) => (
             <div
               key={group.group}
-              className=" rounded-2xl border p-6 "
+              className=" p-6 "
             >
               <h3 className="font-display text-lg ">
                 {group.group}
