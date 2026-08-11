@@ -1,13 +1,17 @@
+import BackButton from "@/app/ui/dashboard/backButton";
+
 export default function Page() {
     return (
       <main className="min-h-screen bg-background pt-16 text-foreground">
         <div className="mx-auto max-w-6xl px-6 py-16">
   
-          {/* Header */}
           <section className="max-w-3xl">
-            <p className="font-mono text-sm text-accent-500">
-              CLIENT PROJECT / 03
-            </p>
+          <div className="flex flex-col gap-3">
+  <BackButton />
+  <p className="font-mono text-sm text-accent-500">
+    CLIENT PROJECT / 03
+  </p>
+</div>
   
             <h1 className="mt-4 text-5xl font-bold tracking-tight md:text-6xl">
               Production Order Processing System
