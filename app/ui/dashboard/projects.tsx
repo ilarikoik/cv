@@ -72,6 +72,7 @@ import Link from "next/link";
 const PROJECTS = [
   {
     number: "01",
+    status: "yellow",
     title: "Smart Job Application Autofill",
     description:
       "Chrome extension prototype that automatically fills job application forms using saved profile data.",
@@ -80,6 +81,7 @@ const PROJECTS = [
   },
   {
     number: "02",
+    status: "green",
     title: "Stock Portfolio Tracker",
     description:
       "Dashboard for tracking stock portfolios with performance metrics, profit/loss and analytics.",
@@ -88,6 +90,7 @@ const PROJECTS = [
   },
   {
     number: "03",
+    status: "green",
     title: "Production Order Processing",
     description:
       "Backend system developed for a real manufacturing company to process and manage production orders.",
@@ -115,14 +118,17 @@ export function Projects() {
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {PROJECTS.map((project) => (
             <Link
-              key={project.title}
-              href={project.href}
-              className="group rounded-2xl border border-black/10 bg-black/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-500/30 hover:bg-black/10 hover:shadow-xl dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10"
+            key={project.title}
+            href={project.href}
+            className="group rounded-2xl border border-black/10 bg-black/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-500/30 hover:bg-black/10 hover:shadow-xl dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10"
             >
               <div className="flex items-center justify-between">
-                <span className="font-mono text-xs text-accent-500">
+                <div className="flex justify-between items-center">
+                <span className="font-mono text-xs text-accent-500 mr-3">
                   {project.number}
                 </span>
+            <span className={`h-3 w-3 rounded-full bg-${project.status}-400/70` }/>
+                </div>
 
                 <span className="text-black/30 transition group-hover:translate-x-1 group-hover:text-accent-500 dark:text-white/30">
                   →
