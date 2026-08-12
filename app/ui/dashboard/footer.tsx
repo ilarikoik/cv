@@ -1,5 +1,6 @@
 import { Mail} from 'lucide-react';
 import PopUp from './popUp';
+import CommentForm from './comment';
 
 
 export function Footer() {
@@ -11,18 +12,9 @@ export function Footer() {
           </h2>
           <h6 className='font-mono'>Leave a message with contact info and I will get back to you.</h6>
           <div>
-          <form className="flex h-fit flex-col gap-4 focus:outline-none focus:ring-0">
-  <textarea
-    name="message"
-    rows={10}
-    placeholder="Whats on your mind?"
-    className="w-full resize-none bg-black/10 dark:bg-white/15 rounded-xl border-ink-950/10  p-4 outline-none transition dark:border-paper-50/10 dark:bg-ink-900/50 "
-  />
-
-<PopUp className="cursor-pointer self-end px-6 py-3 text-sm font-semibold transition  hover:bg-black/10 dark:hover:bg-white/15 rounded-2xl" />
-</form>
+       
           </div>
-        
+        <CommentForm />
         </div>
         <p className="mt-8 text-center font-mono text-xs text-ink-950/40 dark:text-paper-50/40">
           © {new Date().getFullYear()} — Built with Next.js, Tailwind, and Postgres for analytics

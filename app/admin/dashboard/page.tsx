@@ -10,25 +10,6 @@ export default async function Page() {
     redirect("/admin");
   }
 
-//   const teksti = "koitetaan toimiiko";
-//   const handleSubmit = async (teksti: string) => {
-//     try {
-//       const response = await fetch("/api/comments", {
-//         method: "POST",
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify({ message: teksti }),
-//       });
-//       if (!response.ok) {
-//         throw new Error("täällä");
-//       }
-//       const result = await response.json();
-//       console.log(result);
-//     } catch (error) {
-//       console.error(error);
-//     }
-//   };
 
 
   return (
