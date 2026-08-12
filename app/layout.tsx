@@ -26,12 +26,7 @@ export default function RootLayout({
       className={`${Elms.className} h-full antialiased `}
     >
       <body className="h-full text-black/40 dark:text-white/70">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider >
           <Navbar />
           {children}
         </ThemeProvider>
