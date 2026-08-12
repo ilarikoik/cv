@@ -9,6 +9,7 @@ export default function PopUp(props : {className: string}) {
         <>
       <div className={props.className}>
         <button
+        type="button"
           onClick={() => setPopupOpen(true)}
           >
           Send Message
@@ -24,10 +25,10 @@ export default function PopUp(props : {className: string}) {
               className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl dark:bg-neutral-900"
               onClick={(e) => e.stopPropagation()}
               >
-              <h2 className="text-xl font-bold">Popup</h2>
+              <h2 className="text-xl font-bold">Thank you for message!</h2>
   
               <p className="mt-2 opacity-60">
-                Tässä popupin sisältö.
+                Lisää vastaus serveriltä
               </p>
   
               <button
