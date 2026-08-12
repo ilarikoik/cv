@@ -4,7 +4,6 @@ import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 
 export default async function Page() {
-
     const session = await auth();
 
   if (!session) {
@@ -34,7 +33,7 @@ export default async function Page() {
 
   return (
     <>
-      <h1 className="pt-20">DASHBOARS</h1>
+    <p className="pt-20"></p>
     <AdminPageLogOut />
     <Comments />
      
