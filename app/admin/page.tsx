@@ -1,7 +1,12 @@
+'use client'
+
 export default function AdminPage() {
+
+
     return (
       <main className="min-h-screen pt-20">
         <div className="mx-auto max-w-md px-6 py-12">
+       
           <h1 className="text-3xl font-bold">Admin Login</h1>
   
           <form className="mt-8 flex flex-col gap-4">
