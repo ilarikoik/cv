@@ -41,12 +41,13 @@ export default function Page() {
           </section>
   
           <section className="mt-16">
-          <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-black/5 dark:border-white/10 dark:bg-white/5">
+          <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-black/5 dark:border-white/10 dark:bg-red-300">
   <Image
     src="/tj-dashboard.png"
     alt="Trading Journal Dashboard"
     fill
-    className="object-cover"
+    className="object-cover scale-[1.02]"
+    // skaalaa kuvaa hieman isommaksi niin että reunat eivät näy (joku bugi object-coverissa+fill)
   />
 </div>
             {/* <div className="flex min-h-105 items-center justify-center rounded-2xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5">
