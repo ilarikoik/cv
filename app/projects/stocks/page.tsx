@@ -310,13 +310,22 @@ export default function Page() {
                   Built with React & Spring Boot
                 </h2>
               </div>
-  
+              
+              <div className="flex flex-col">
+
               <a
-                href="#"
+                href="https://t-journal-gr7l.vercel.app/login"
                 className="w-fit rounded-full bg-accent-500 px-6 py-3 text-sm font-semibold text-white transition hover:scale-105"
-              >
+                >
+                View Site →
+              </a>
+              <a
+                href="https://github.com/ilarikoik/t-journal"
+                className="w-fit rounded-full bg-accent-500 px-6 py-3 text-sm font-semibold text-white transition hover:scale-105"
+                >
                 View on GitHub →
               </a>
+                  </div>
             </div>
           </section>
   
