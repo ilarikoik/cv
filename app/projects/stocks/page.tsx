@@ -41,7 +41,7 @@ export default function Page() {
           </section>
   
           <section className="mt-16">
-          <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-black/5 dark:border-white/10 dark:bg-red-300">
+          <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-black/5 dark:border-white/10 dark:bg-black">
   <Image
     src="/tj-dashboard.png"
     alt="Trading Journal Dashboard"
