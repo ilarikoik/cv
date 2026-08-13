@@ -91,7 +91,6 @@ export default function Page() {
             </div>
           </section>
   
-          {/* Architecture */}
           <section className="mt-24">
             <p className="font-mono text-sm text-accent-500">
               02 / ARCHITECTURE
@@ -130,47 +129,9 @@ export default function Page() {
             </div>
           </section>
   
-          {/* Responsibilities */}
           <section className="mt-24">
             <p className="font-mono text-sm text-accent-500">
-              03 / CONTRIBUTION
-            </p>
-  
-            <h2 className="mt-3 text-3xl font-semibold">
-              My contribution
-            </h2>
-  
-            <div className="mt-8 grid gap-4 md:grid-cols-2">
-              {[
-                "Designed and implemented API endpoints",
-                "Processed incoming webhook payloads",
-                "Created database models and persistence logic",
-                "Implemented order status handling",
-                "Worked with PostgreSQL and SQLAlchemy",
-                "Created database migrations with Alembic",
-                "Wrote automated API and persistence tests",
-                "Containerized the application with Docker",
-                "Supported deployment to OpenShift",
-                "Implemented health-check endpoints",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="rounded-xl border border-black/10 bg-black/5 px-5 py-4 text-sm dark:border-white/10 dark:bg-white/5"
-                >
-                  <span className="mr-3 text-accent-500">
-                    →
-                  </span>
-  
-                  {item}
-                </div>
-              ))}
-            </div>
-          </section>
-  
-          {/* API */}
-          <section className="mt-24">
-            <p className="font-mono text-sm text-accent-500">
-              04 / API
+              03 / API
             </p>
   
             <h2 className="mt-3 text-3xl font-semibold">
@@ -215,11 +176,10 @@ export default function Page() {
             </div>
           </section>
   
-          {/* Database */}
           <section className="mt-24 grid gap-12 md:grid-cols-2">
             <div>
               <p className="font-mono text-sm text-accent-500">
-                05 / DATABASE
+                04 / DATABASE
               </p>
   
               <h2 className="mt-3 text-3xl font-semibold">
@@ -258,7 +218,7 @@ export default function Page() {
           <section className="mt-24 grid gap-6 md:grid-cols-2">
             <div className="rounded-2xl border border-black/10 bg-black/5 p-8 dark:border-white/10 dark:bg-white/5">
               <p className="font-mono text-sm text-accent-500">
-                06 / TESTING
+                05 / TESTING
               </p>
   
               <h2 className="mt-3 text-2xl font-semibold">
@@ -279,7 +239,7 @@ export default function Page() {
             {/* Deployment */}
             <div className="rounded-2xl border border-black/10 bg-black/5 p-8 dark:border-white/10 dark:bg-white/5">
               <p className="font-mono text-sm text-accent-500">
-                07 / DEPLOYMENT
+                06 / DEPLOYMENT
               </p>
   
               <h2 className="mt-3 text-2xl font-semibold">
@@ -313,7 +273,7 @@ export default function Page() {
           {/* Stack */}
           <section className="mt-24">
             <p className="font-mono text-sm text-accent-500">
-              08 / STACK
+              07 / STACK
             </p>
   
             <div className="mt-8 grid gap-4 md:grid-cols-4">

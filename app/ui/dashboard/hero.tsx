@@ -147,6 +147,7 @@
 
 
 import { Mail, CodeXml } from "lucide-react";
+import CopyEmail from "./copyEmail";
 
 export function Hero() {
   return (
@@ -179,7 +180,8 @@ export function Hero() {
         <div className="mt-8 flex items-center gap-4">
           <a
             href="#projects"
-            className="rounded-full border border-black/10 bg-black/5 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:bg-black/10 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10"
+            className="rounded-full border border-black/10 bg-black/5 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10 hover:text-white"
+            
           >
             Projects
           </a>
@@ -196,13 +198,14 @@ export function Hero() {
             <CodeXml size={17} />
           </a>
 
-          <a
+    <CopyEmail/>
+          {/* <a
             href="mailto:ilari.koik@gmail.com"
             className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-black/5 transition hover:-translate-y-1 hover:bg-accent-500 hover:text-white dark:border-white/10 dark:bg-white/5"
             aria-label="Email"
           >
             <Mail size={17} />
-          </a>
+          </a> */}
         </div>
       </div>
 

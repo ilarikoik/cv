@@ -10,8 +10,11 @@ const Elms = Elms_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "My App",
-  description: "My application",
+  title: "Ilari",
+  description: "My personal website and portfolio",
+  icons: {
+    icon: "/favicon.ico?v=2",
+  },
 };
 
 export default function RootLayout({

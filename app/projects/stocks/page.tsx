@@ -8,7 +8,7 @@ export default function Page() {
 
     <BackButton />
     <p className="font-mono text-sm text-accent-500 mt-5">
-      CLIENT PROJECT / 03
+      PROJECT / 02
     </p>
             <h1 className="mt-4 text-5xl font-bold tracking-tight md:text-6xl">
               Trading Journal

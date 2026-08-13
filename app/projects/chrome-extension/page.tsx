@@ -10,7 +10,7 @@ export default function Page() {
         <div className="flex flex-col gap-3">
   <BackButton />
   <p className="font-mono text-sm text-accent-500">
-    CLIENT PROJECT / 03
+    THESIS PROJECT / 01
   </p>
 </div>
 

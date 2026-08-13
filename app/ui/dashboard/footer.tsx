@@ -7,7 +7,7 @@ export function Footer() {
     return (
       <footer id="contact" className="mx-auto max-w-6xl px-6 py-24">
         <div className="relative overflow-hidden bg-paper-50 text-ink-950 transition-colors dark:bg-ink-950 dark:text-paper-50">
-          <h2 className="font-mono mt-2 font-display text-xl tracking-tight md:text-2xl">
+          <h2 className="hidden md:flex font-mono mt-2 font-display text-xl tracking-tight md:text-2xl">
             Maybe there is something we can do together? 
           </h2>
           <h6 className='font-mono'>Leave a message with contact info and I will get back to you.</h6>
