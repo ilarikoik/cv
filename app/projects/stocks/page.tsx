@@ -1,4 +1,5 @@
 import BackButton from "@/app/ui/dashboard/backButton";
+import Image from "next/image";
 
 export default function Page() {
     return (
@@ -39,9 +40,16 @@ export default function Page() {
             </div>
           </section>
   
-          {/* Project preview */}
           <section className="mt-16">
-            <div className="flex min-h-[420px] items-center justify-center rounded-2xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5">
+          <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-black/5 dark:border-white/10 dark:bg-white/5">
+  <Image
+    src="/tj-dashboard.png"
+    alt="Trading Journal Dashboard"
+    fill
+    className="object-cover"
+  />
+</div>
+            {/* <div className="flex min-h-105 items-center justify-center rounded-2xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5">
               <div className="text-center">
                 <p className="font-mono text-sm opacity-40">
                   PROJECT PREVIEW
@@ -50,7 +58,7 @@ export default function Page() {
                   Trading Journal Dashboard
                 </p>
               </div>
-            </div>
+            </div> */}
           </section>
   
           {/* About */}
