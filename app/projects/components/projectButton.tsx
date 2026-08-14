@@ -74,20 +74,15 @@ export default function ProjectButton() {
             key={project.title}
             href={project.href}
             className="group rounded-2xl border border-black/10 bg-black/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-500/30 hover:bg-black/10 hover:shadow-xl dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10"
+            onClick={() => handleClick(project.title)}
             >
               <div className="flex items-center justify-between">
                 <div className="flex justify-between items-center">
                 <span className="font-mono text-xs text-accent-500 mr-3">
                   {project.number}
                 </span>
-                <button className="bg-red-300 h-12"  onClick={(e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    handleClick(project.title);
-  }}>ööööööö</button>
             <span className={`h-3 w-3 rounded-full bg-${project.status}-400/70` }/>
                 </div>
-
                 <span className="text-black/30 transition group-hover:translate-x-1 group-hover:text-accent-500 dark:text-white/30">
                   →
                 </span>
