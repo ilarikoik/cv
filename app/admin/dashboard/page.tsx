@@ -5,20 +5,23 @@ import { redirect } from "next/navigation";
 import ProjectClicks from "../ui/projectClicks";
 
 export default async function Page() {
-    const session = await auth();
+  const session = await auth();
 
   if (!session) {
     redirect("/admin");
   }
 
-
-
   return (
-    <>
-    <p className="pt-20"></p>
-    <AdminPageLogOut />
-    {/* <Comments /> */}
-     <ProjectClicks />
-    </>
+    <div className="pt-20">
+      <AdminPageLogOut />
+      <div className="mx-auto flex max-w-5xl flex-col gap-6 p-4 md:flex-row md:items-start">
+        <div className="w-full md:w-1/2">
+          <ProjectClicks />
+        </div>
+        <div className="w-full md:w-1/2">
+          <Comments />
+        </div>
+      </div>
+    </div>
   );
 }

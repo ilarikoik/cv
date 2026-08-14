@@ -3,8 +3,13 @@
 import { useEffect, useState } from "react";
 import Card from "./card";
 
+interface ProjectClick {
+  name: string;
+  clicks: number;
+}
+
 export default function ProjectClicks() {
-  const [projectsClicks, setProjectsClicks] = useState([]);
+  const [projectsClicks, setProjectsClicks] = useState<ProjectClick[]>([]);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -14,7 +19,6 @@ export default function ProjectClicks() {
           throw new Error("Failed to fetch project");
         }
         const data = await response.json();
-        console.log("Fetched projects:", data);
         setProjectsClicks(data);
       } catch (error) {
         console.error("Error fetching projects:", error);
@@ -24,11 +28,11 @@ export default function ProjectClicks() {
     fetchProjects();
   }, []);
 
-  if (Object.keys(projectsClicks).length === 0) {
+  if (projectsClicks.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center p-8">
         <p className="text-sm text-gray-500">Project Clicks</p>
-        <p className="text-sm text-gray-500">
+        <p className="mt-1 text-sm text-gray-400">
           No project clicks data available.
         </p>
       </div>
@@ -36,14 +40,12 @@ export default function ProjectClicks() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <p className="text-sm text-gray-500">Project Clicks</p>
-      {projectsClicks.map((projectClicks :any ) => (
-        <Card
-          key={projectClicks.name}
-          name={projectClicks.name}
-          clicks={projectClicks.clicks}
-        />
+    <div className="flex w-full flex-col gap-3 p-4">
+      <h1 className="text-2xl font-bold text-black dark:text-white">
+        Clicks
+      </h1>
+      {projectsClicks.map((project) => (
+        <Card key={project.name} name={project.name} clicks={project.clicks} />
       ))}
     </div>
   );
