@@ -199,13 +199,7 @@ export function Hero() {
           </a>
 
     <CopyEmail/>
-          {/* <a
-            href="mailto:ilari.koik@gmail.com"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-black/5 transition hover:-translate-y-1 hover:bg-accent-500 hover:text-white dark:border-white/10 dark:bg-white/5"
-            aria-label="Email"
-          >
-            <Mail size={17} />
-          </a> */}
+          
         </div>
       </div>
 
