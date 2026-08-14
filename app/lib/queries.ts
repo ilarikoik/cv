@@ -26,3 +26,8 @@ export async function updateClicks(name: string) {
     );
     return result.rows;
 }
+
+export async function getClicks() {
+    const result = await pool.query("SELECT * FROM project_clicks ORDER BY clicks DESC");
+    return result.rows;
+}

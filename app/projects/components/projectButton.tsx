@@ -34,7 +34,7 @@ const PROJECTS = [
   ];
   
 export default function ProjectButton() {
-    const [projectsClicks, setProjectsClicks] = useState<{ [key: string]: number }>({});
+    // const [projectsClicks, setProjectsClicks] = useState<{ [key: string]: number }>({});
    
 
     const handleClick = async (projectTitle: string) => {
@@ -49,23 +49,23 @@ export default function ProjectButton() {
         }
     };
 
-    useEffect(() => {
-        const fetchProjects = async () => {
-            try {
-                const response = await fetch('/api/projectClicks');
-                if (!response.ok) {
-                    throw new Error('Failed to fetch projects_clicks');
-                }
-                const data = await response.json();
-                console.log('Fetched projects:', data);
-                setProjectsClicks(data);
-            } catch (error) {
-                console.error('Error fetching projects:', error);
-            }
-        };
+    // useEffect(() => {
+    //     const fetchProjects = async () => {
+    //         try {
+    //             const response = await fetch('/api/projectClicks');
+    //             if (!response.ok) {
+    //                 throw new Error('Failed to fetch projects_clicks');
+    //             }
+    //             const data = await response.json();
+    //             console.log('Fetched projects:', data);
+    //             setProjectsClicks(data);
+    //         } catch (error) {
+    //             console.error('Error fetching projects:', error);
+    //         }
+    //     };
 
-        fetchProjects();
-    },[]);
+    //     fetchProjects();
+    // },[]);
 
     return (
         <div className="mt-12 grid gap-5 md:grid-cols-3">

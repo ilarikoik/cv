@@ -2,6 +2,7 @@ import AdminPageLogOut from "@/app/api/auth/logOut";
 import Comments from "@/app/ui/dashboard/comments";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
+import ProjectClicks from "../ui/projectClicks";
 
 export default async function Page() {
     const session = await auth();
@@ -16,8 +17,8 @@ export default async function Page() {
     <>
     <p className="pt-20"></p>
     <AdminPageLogOut />
-    <Comments />
-     
+    {/* <Comments /> */}
+     <ProjectClicks />
     </>
   );
 }

@@ -1,18 +1,18 @@
-import { updateClicks } from "@/app/lib/queries";
+import { getClicks, updateClicks } from "@/app/lib/queries";
 import { NextResponse } from "next/server";
 
-// export async function GET(){
-//     try {
-//         const res = await getClicks();
-//         return new Response(JSON.stringify(res), { status: 200 });
-//     } catch (error) {
-//         console.log(error);
-//         return NextResponse.json(
-//             { error: "Failed to fetch comments" },
-//             { status: 500 }
-//           );
-//     }
-// }
+export async function GET(){
+    try {
+        const res = await getClicks();
+        return new Response(JSON.stringify(res), { status: 200 });
+    } catch (error) {
+        console.log(error);
+        return NextResponse.json(
+            { error: "Failed to fetch comments" },
+            { status: 500 }
+          );
+    }
+}
 
 export async function POST(request: Request) {
     const forwarded = request.headers.get("x-forwarded-for");
