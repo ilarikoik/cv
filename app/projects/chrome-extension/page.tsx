@@ -1,14 +1,19 @@
 import BackButton from "@/app/ui/dashboard/backButton";
+import GitHubButton from "@/app/ui/dashboard/githubButton";
 
 export default function Page() {
   return (
     <main className="min-h-screen bg-background pt-16 text-foreground">
       <div className="mx-auto max-w-6xl px-6 py-12 ">
+          <div className="w-full flex flex-row justify-between">
+
+  <BackButton />
+  <GitHubButton url="https://github.com/ilarikoik/QuickApply"/>
+          </div>
 
         <section className="max-w-3xl ">
 
         <div className="flex flex-col gap-3">
-  <BackButton />
   <p className="font-mono text-sm text-accent-500">
     THESIS PROJECT / 01
   </p>
@@ -407,17 +412,18 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Closing */}
-        <section className="mt-24 border-t border-black/10 pt-12 dark:border-white/10">
-          <p className="max-w-3xl text-sm leading-7 opacity-50">
+        <section className="mt-24 border-t border-black/10 pt-12 dark:border-white/10 flex flex-row justify-between">
+          <p className="max-w-3xl text-sm leading-7 opacity-50 ">
             The project combines full-stack development with a
             practical usability problem: how to automate repetitive
             work without removing the user from the decision-making
             process when the automation is uncertain.
           </p>
+          <GitHubButton url="https://github.com/ilarikoik/QuickApply"/>
         </section>
 
       </div>
+      
     </main>
   );
 }

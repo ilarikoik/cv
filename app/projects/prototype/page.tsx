@@ -1,13 +1,17 @@
 import BackButton from "@/app/ui/dashboard/backButton";
+import GitHubButton from "@/app/ui/dashboard/githubButton";
 
 export default function Page() {
     return (
       <main className="min-h-screen bg-background pt-16 text-foreground">
         <div className="mx-auto max-w-6xl px-6 py-16">
   
+          <div className="w-full flex flex-row justify-between">
+
+<BackButton />
+        </div>
           <section className="max-w-3xl">
           <div className="flex flex-col gap-3">
-  <BackButton />
   <p className="font-mono text-sm text-accent-500">
     CLIENT PROJECT / 03
   </p>

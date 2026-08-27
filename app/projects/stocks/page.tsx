@@ -1,13 +1,19 @@
 import BackButton from "@/app/ui/dashboard/backButton";
+import GitHubButton from "@/app/ui/dashboard/githubButton";
 import Image from "next/image";
 
 export default function Page() {
     return (
       <main className="min-h-screen bg-background pt-16 text-foreground">
         <div className="mx-auto max-w-6xl px-6 py-16 ">
+        <div className="w-full flex flex-row justify-between">
+
+<BackButton />
+<GitHubButton url="https://github.com/ilarikoik/t-journal"/>
+        </div>
           <section className="max-w-3xl">
 
-    <BackButton />
+   
     <p className="font-mono text-sm text-accent-500 mt-5">
       PROJECT / 02
     </p>
@@ -298,7 +304,6 @@ export default function Page() {
             </div>
           </section>
   
-          {/* Footer CTA */}
           <section className="mt-24 border-t border-black/10 pt-12 dark:border-white/10">
             <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
               <div>
