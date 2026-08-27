@@ -18,8 +18,7 @@ export async function POST(request: Request) {
     const forwarded = request.headers.get("x-forwarded-for");
     const ip = forwarded ? forwarded.split(",")[0] : "unknown";
 
-   
-    if (ip === process.env.MY_IP) {
+    if (ip === process.env.MY_IP || ip === '::1') {
         console.log("OMA IP, skip updating clicks");
         return NextResponse.json({ skipped: true }, { status: 200 });
     }
